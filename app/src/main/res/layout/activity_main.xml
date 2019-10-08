@@ -6,54 +6,77 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="728dp"
+        android:layout_height="1026dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg" />
+
     <TextView
         android:id="@+id/Text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="172dp"
-        android:text="Luas Bangun Datar"
-        android:textColor="@color/colorPrimary"
-        android:textSize="35dp"
+        android:layout_width="278dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="160dp"
+        android:text="Pemesanan Cafe Devany"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="40dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/Segitiga"
+        android:id="@+id/IceCream"
+        android:layout_width="165dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="40dp"
+        android:shadowColor="#4DCCFA"
+        android:text="Ice Cream"
+        android:textColor="#FC64C6"
+        android:textColorHighlight="#003CFD12"
+        android:textColorHint="#00C9A00C"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="380dp"
-        android:onClick="Segitiga"
-        android:text="Segitiga"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:onClick="Persegi"
-        android:text="Persegi"
+        android:id="@+id/HotDrink"
+        android:layout_width="164dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="40dp"
+        android:text="Hot Drink"
+        android:textColor="#725008"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IceCream" />
+
+    <Button
+        android:id="@+id/ColdDrink"
+        android:layout_width="160dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="40dp"
+        android:text="Cold Drink"
+        android:textColor="#03A9F4"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Segitiga" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:text="Trapesium"
-        android:onClick="Trapesium"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
-        app:layout_constraintVertical_bias="0.193" />
+        app:layout_constraintTop_toBottomOf="@+id/HotDrink" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

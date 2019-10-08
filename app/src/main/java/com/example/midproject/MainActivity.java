@@ -13,12 +13,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void Persegi(View view) {
+    public void Pizza(View view) {
     }
 
-    public void Segitiga(View view) {
+    public void Soda(View view) {
     }
 
-    public void Trapesium(View view) {
+    public void EsKrim(View view) {
     }
 }
