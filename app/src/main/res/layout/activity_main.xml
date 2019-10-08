@@ -9,9 +9,10 @@
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="728dp"
-        android:layout_height="1026dp"
+        android:layout_height="1326dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/bg" />
@@ -20,7 +21,7 @@
         android:id="@+id/Text"
         android:layout_width="278dp"
         android:layout_height="106dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="152dp"
         android:text="Pemesanan Cafe Devany"
         android:textAlignment="center"
         android:textColor="#000000"
@@ -34,15 +35,16 @@
         android:id="@+id/IceCream"
         android:layout_width="165dp"
         android:layout_height="69dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="36dp"
         android:shadowColor="#4DCCFA"
         android:text="Ice Cream"
+        android:onClick="IceCream"
         android:textColor="#FC64C6"
         android:textColorHighlight="#003CFD12"
         android:textColorHint="#00C9A00C"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Text" />
 
@@ -57,12 +59,13 @@
         android:id="@+id/HotDrink"
         android:layout_width="164dp"
         android:layout_height="63dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="24dp"
         android:text="Hot Drink"
+        android:onClick="HotDrink"
         android:textColor="#725008"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/IceCream" />
 
@@ -70,13 +73,25 @@
         android:id="@+id/ColdDrink"
         android:layout_width="160dp"
         android:layout_height="59dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="28dp"
         android:text="Cold Drink"
         android:textColor="#03A9F4"
         android:textSize="20sp"
+        android:onClick="ColdDrink"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/HotDrink" />
+
+    <Button
+        android:id="@+id/Tentang"
+        android:layout_width="74dp"
+        android:layout_height="36dp"
+        android:text="Tentang"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
