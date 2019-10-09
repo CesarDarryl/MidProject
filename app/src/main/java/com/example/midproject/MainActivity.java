@@ -2,11 +2,14 @@ package com.example.midproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.example.midproject.activities.TentangActivity;
 
 public class MainActivity extends AppCompatActivity {
     private TentangFragment tentangFragment;
@@ -17,13 +20,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstante) {
-        View view= inflater.inflate(R.layout.fragment_tentang, container, false);
-        return view;
-    }
-
     public void IceCream(View view) {
     }
 
@@ -31,5 +27,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void ColdDrink(View view) {
+    }
+
+    public void Tentang(View view) {
+        Intent intent= new Intent(this, TentangActivity.class);
+        startActivity(intent);
     }
 }
