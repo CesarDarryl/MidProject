@@ -1,4 +1,4 @@
-package com.example.midproject;
+package com.example.midproject.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,10 +9,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.midproject.R;
+import com.example.midproject.TentangFragment;
 import com.example.midproject.activities.TentangActivity;
 
 public class MainActivity extends AppCompatActivity {
     private TentangFragment tentangFragment;
+
+    public static void addToBackStack(Object o) {
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
