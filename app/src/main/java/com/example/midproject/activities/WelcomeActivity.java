@@ -1,6 +1,7 @@
 package com.example.midproject.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Context;
@@ -127,7 +128,7 @@ public class WelcomeActivity extends AppCompatActivity {
     /**
      * View pager adapter
      */
-    public class MyViewPagerAdapter extends com.example.midproject.activities.MyViewPagerAdapter {
+    public class MyViewPagerAdapter extends PagerAdapter implements MyViewPagerAdapter1 {
         private LayoutInflater layoutInflater;
 
         public MyViewPagerAdapter() {

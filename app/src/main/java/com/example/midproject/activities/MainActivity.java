@@ -4,17 +4,21 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.example.midproject.R;
-import com.example.midproject.TentangFragment;
-import com.example.midproject.activities.TentangActivity;
+
+import fragments.TentangFragment;
 
 public class MainActivity extends AppCompatActivity {
     private TentangFragment tentangFragment;
+
+    public MainActivity(TentangFragment tentangFragment) {
+        this.tentangFragment = tentangFragment;
+
+        Intent intent= new Intent(this, TentangActivity.class);
+        startActivity(intent);
+    }
 
     public static void addToBackStack(Object o) {
     }
@@ -35,7 +39,5 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Tentang(View view) {
-        Intent intent= new Intent(this, TentangActivity.class);
-        startActivity(intent);
     }
 }
